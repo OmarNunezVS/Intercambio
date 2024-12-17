@@ -7,7 +7,7 @@ const CONST_SERVICE_ID = "service_j0ycutd";
 const btnRegistro = $("#btnRegistro");
 const txtRegistro = $("#txtRegistro");
 
-// fncBienvenida();
+fncBienvenida();
 
 btnRegistro.click(function () {
     fncMain(txtRegistro.val());
