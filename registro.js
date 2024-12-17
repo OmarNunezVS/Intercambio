@@ -7,6 +7,8 @@ const CONST_SERVICE_ID = "service_j0ycutd";
 const btnRegistro = $("#btnRegistro");
 const txtRegistro = $("#txtRegistro");
 
+// fncBienvenida();
+
 btnRegistro.click(function () {
     fncMain(txtRegistro.val());
 });
@@ -49,7 +51,19 @@ function fncAlert2WarningError(msj, esError) {
     Swal.fire({
         icon: ico,
         title: "Ocurrió un error",
-        text: msj
+        text: msj,
+        confirmButtonText: "Cerrar"
+    });
+}
+
+function fncBienvenida() {
+    const CONST_MENSAJE_BIENVENIDA = `Ingresar el nombre de la persona que va a regalarle en el intercambio en el 
+        recuadro color rojo y luego darle clic al botón verde para finalizar.`;
+    Swal.fire({
+        icon: "info",
+        title: "Bienvenido",
+        text: CONST_MENSAJE_BIENVENIDA,
+        confirmButtonText: "Cerrar"
     });
 }
 
