@@ -1,19 +1,24 @@
 /* BODY */
-body {
-    background-image: url("../../images/FelizNavidad.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 
-.cardMaster {
-    margin-top: 22%;
+.bg {
+    /* The image used */
+    background-image: url("../../images/FelizNavidad.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
     color: white;
-}
-
-.frmRegistrar {
-    width: 51%;
 }
